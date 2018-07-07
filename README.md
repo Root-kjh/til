@@ -1,7 +1,7 @@
 <h1>TIL</h1>
 <hr>
 📝 Today I Learned<br>
-<h3>RULES</h3>
+### RULES
 <hr>
 <ul>
     <li>매일 새로 배운 내용을 기록한다.</li>
