@@ -1,4 +1,4 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include "ArrayList.h"
 
 void ListInit(List * plist) {
@@ -8,7 +8,7 @@ void ListInit(List * plist) {
 
 void LInsert(List * plist, LData data) {
 	if ((plist->numOfData) >= LIST_LEN) {
-		puts("���̻� ���� ���� �� �����ϴ�.");
+		puts("No more values ​​can be entered.");
 		return;
 	}
 
