@@ -1,4 +1,4 @@
-# Linked_List(Pointer)
+# Linked_List
 ---
 
 ### Operations

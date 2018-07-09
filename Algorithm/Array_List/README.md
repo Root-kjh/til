@@ -1,4 +1,4 @@
-# Linked_List(Array)
+# Array_List
 ---
 
 ### Operations
