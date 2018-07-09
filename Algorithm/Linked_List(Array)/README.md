@@ -6,7 +6,7 @@
 * void ListInit(List * plist);
 > * 초기화 할 리스트의 주소 값을 인자로 전달.
 
-* void LInsert(List * plist, LData * data);
+* void LInsert(List * plist, LData data);
 > * 리스트에 데이터 저장.
 > * 매개변수 data에 전달된 값 저장 
 
