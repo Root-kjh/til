@@ -1,4 +1,4 @@
-# Linked_List
+# Linked_List   
 ---
 
 ### Operations
@@ -28,6 +28,3 @@
 
 * int LCount(List * plist);
 > * 리스트의 저장되어 있는 데이터의 수 반환
-
-* void SetSortRule(List * plist, int (*comp)(LData d1, LData d2));
-> * 리스트의 정렬 기준이 되는 함수를 등록한다.
