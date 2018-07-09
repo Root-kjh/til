@@ -11,7 +11,7 @@ void LInsert(List * plist, LData data) {
 		puts("No more values ​​can be entered.");
 		return;
 	}
-
+	
 	(plist->arr[(plist->numOfData)]) = data;
 	(plist->numOfData)++;
 }
