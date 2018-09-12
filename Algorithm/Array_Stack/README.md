@@ -1,4 +1,4 @@
-# Stack
+# Array_Stack
 ---
 
 ### Operations
