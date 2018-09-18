@@ -22,4 +22,4 @@
 > 왼쪽 서브 트리를 연결한다.
 
 * void MakeRighSubTree(BTreeNode * main, BTreeNode * sub);
-> 오른쪽 서브 트리를 연결한다.
+> 오른쪽 서브 트리를 연결한다..
