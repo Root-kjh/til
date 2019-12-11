@@ -8,4 +8,4 @@
 
 * 너비 우선 탐색에 비해 느리다.
 
-![DEF의 과정](https://gmlwjd9405.github.io/images/algorithm-dfs-vs-bfs/dfs-example.png)
+![DFS의 과정](https://gmlwjd9405.github.io/images/algorithm-dfs-vs-bfs/dfs-example.png)
