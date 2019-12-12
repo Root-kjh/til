@@ -20,7 +20,6 @@ if __name__ == "__main__":
     queue.append('A')
 
     while queue:
-        flag=False
         node=queue.pop(0)
         if node not in visit:
             print(node)
