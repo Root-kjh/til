@@ -5,4 +5,4 @@
 
 ## 목차
 
-* [미적분1]("https://github.com/Root-kjh/til/tree/master/Math/%EB%AF%B8%EC%A0%81%EB%B6%841")
+* [미적분1](https://github.com/Root-kjh/til/tree/master/Math/%EB%AF%B8%EC%A0%81%EB%B6%841)
