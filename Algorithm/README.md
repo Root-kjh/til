@@ -1,43 +1,32 @@
 # Algorithm
+>여러 알고리즘과 자료구조에 대해 학습합니다.
 
----
+## 목차
 
 ### 자료구조
-> 데이터의 표현 및 저장방법
 
 #### 선형구조
 
 1. 리스트
+    * [Array_List](https://github.com/Root-kjh/til/tree/master/Algorithm/Array_List)
+    * [Linked_List](https://github.com/Root-kjh/til/tree/master/Algorithm/Linked_List)
+    * [Circular_Linked_List](https://github.com/Root-kjh/til/tree/master/Algorithm/Circular_Linked_List)
 2. 스택
+    * [Array_Stack](https://github.com/Root-kjh/til/tree/master/Algorithm/Array_Stack)
+    * [Linked_List_Stack](https://github.com/Root-kjh/til/tree/master/Algorithm/Linked_List_Stack)
 3. 큐
+    * [List_Base_Queue](https://github.com/Root-kjh/til/tree/master/Algorithm/List_Base_Queue)
+    * [Circular_Queue](https://github.com/Root-kjh/til/tree/master/Algorithm/Circular_Queue)
+    * [Deque](https://github.com/Root-kjh/til/tree/master/Algorithm/Deque)
 
 #### 비선형구조
 
 1. 트리
-2. 그래프
-
-#### 파일구조
-
-1. 순차파일
-2. 색인파일
-3. 직접파일
-
-#### 단순구조
-
-1. 정수
-2. 실수
-3. 문자
-4. 문자열
-
----
+    * [Binary_Tree](https://github.com/Root-kjh/til/tree/master/Algorithm/Binary_Tree)
 
 ### 알고리즘
-> 문제의 해결 방법
 
-#### 알고리즘의 시간 복잡도(Time Complexity)
->알고리즘의 속도를 나타내는 그래프
-
-연산 횟수를 통해 알고리즘의 빠르기를 판단한다.
-
-#### 알고리즘의 공간 복잡도(Space Complexity)
->알고리즘의 메모리 사용량을 나타내는 그래프
+1. [BFS](https://github.com/Root-kjh/til/tree/master/Algorithm/BFS)
+2. [DFS](https://github.com/Root-kjh/til/tree/master/Algorithm/DFS)
+3. [BackTracking](https://github.com/Root-kjh/til/tree/master/Algorithm/BackTracking)
+4. [Fibonacci](https://github.com/Root-kjh/til/tree/master/Algorithm/Fibonacci)
