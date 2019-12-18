@@ -9,7 +9,7 @@
 
 1. 리스트
     * [Array_List](/Algorithm/Array_List)
-    * [Linked_List]/Algorithm/Linked_List)
+    * [Linked_List](/Algorithm/Linked_List)
     * [Circular_Linked_List](/Algorithm/Circular_Linked_List)
 2. 스택
     * [Array_Stack](/Algorithm/Array_Stack)
