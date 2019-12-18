@@ -31,3 +31,4 @@
 3. [BackTracking](/Algorithm/BackTracking)
 4. [Fibonacci](/Algorithm/Fibonacci)
 5. [Counting Sort](/Algorithm/Counting_Sort)
+6. [Primality Test](/Algorithm/Primality_Test)
