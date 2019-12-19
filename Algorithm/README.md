@@ -11,13 +11,13 @@
     * [Array_List](/Algorithm/List/Array_List)
     * [Linked_List](/Algorithm/List/Linked_List)
     * [Circular_Linked_List](/Algorithm/List/Circular_Linked_List)
-2. 스택
+2. [스택](/Algorithm/Stack)
     * [Array_Stack](/Algorithm/Stack/Array_Stack)
     * [Linked_List_Stack](/Algorithm/Stack/Linked_List_Stack)
-3. 큐
+3. [큐](/Algorithm/Queue)
     * [List_Base_Queue](/Algorithm/Queue/List_Base_Queue)
     * [Circular_Queue](/Algorithm/Queue/Circular_Queue)
-    * [Deque](/Algorithm/Queue/Deque)
+4. [덱](/Algorithm/Deque)
 
 #### 비선형구조
 
