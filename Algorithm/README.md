@@ -7,22 +7,25 @@
 
 #### 선형구조
 
-1. 리스트
-    * [Array_List](/Algorithm/Array_List)
-    * [Linked_List](/Algorithm/Linked_List)
-    * [Circular_Linked_List](/Algorithm/Circular_Linked_List)
+1. [리스트](/Algorithm/List)
+    * [Array_List](/Algorithm/List/Array_List)
+    * [Linked_List](/Algorithm/List/Linked_List)
+    * [Circular_Linked_List](/Algorithm/List/Circular_Linked_List)
 2. 스택
-    * [Array_Stack](/Algorithm/Array_Stack)
-    * [Linked_List_Stack](/Algorithm/Linked_List_Stack)
+    * [Array_Stack](/Algorithm/Stack/Array_Stack)
+    * [Linked_List_Stack](/Algorithm/Stack/Linked_List_Stack)
 3. 큐
-    * [List_Base_Queue](/Algorithm/List_Base_Queue)
-    * [Circular_Queue](/Algorithm/Circular_Queue)
-    * [Deque](/Algorithm/Deque)
+    * [List_Base_Queue](/Algorithm/Queue/List_Base_Queue)
+    * [Circular_Queue](/Algorithm/Queue/Circular_Queue)
+    * [Deque](/Algorithm/Queue/Deque)
 
 #### 비선형구조
 
-1. 트리
+1. [트리](/Algorithm/Tree)
     * [Binary_Tree](/Algorithm/Binary_Tree)
+
+2. [그래프](//Algorithm/Graph)
+    * [Weighted Graph](/Algorithm/Graph/Weighted_Graph)
 
 ### 알고리즘
 
