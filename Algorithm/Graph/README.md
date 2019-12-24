@@ -21,7 +21,7 @@
 
 1. 연결 관계에 있어서 방향성이 없는 그래프
 
-    무방향 그래프(Undirected Graph)
+    [무방향 그래프(Undirected Graph)]
 
 2. 간선에 방향정보가 포함된 그래프
 
@@ -29,7 +29,7 @@
 
 3. 간선에 가중치 정보를 두어 구성한 그래프
 
-    [가중치 그래프(Weight Graph)](/Algorithm/Graph/Weight_Graph/)
+    가중치 그래프(Weight Graph)
 
 4. 원 그래프의 일부 정점 및 간선으로  이뤄진 그래프
 
