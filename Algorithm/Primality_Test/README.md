@@ -65,3 +65,9 @@ def is_prime(n):
 n은 n과 서로소인 모든 정수 a에 대해 다음 합동식이 성립할 때만 소수이며, 그렇지 않으면 합성수이다.
 
 ![AKS 소수 판별법-합동식](https://wikimedia.org/api/rest_v1/media/math/render/svg/da2b748412959ef2df65dc78a826c55931069506)
+
+## 리먼 소인수분해
+
+## 페르마의 소인수분해
+
+## 리먼+페르마 알고리즘 융합
