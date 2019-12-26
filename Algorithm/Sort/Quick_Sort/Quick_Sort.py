@@ -11,12 +11,10 @@ def Quick_Sort(low,high):
     pivot=high
     high-=1
     while high>=low:
-        if table[low]<table[pivot]:
-            while table[low]<table[pivot] and low<=thigh:
-                low+=1
-        if table[high]>table[pivot]:
-            while table[high]>table[pivot] and high>=tlow:
-                high-=1
+        while table[low]<table[pivot] and low<=thigh:
+            low+=1
+        while table[high]>table[pivot] and high>=tlow:
+            high-=1
         if high>low:
             temp=table[high]
             table[high]=table[low]
