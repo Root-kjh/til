@@ -25,4 +25,4 @@
 
 4. 2개의 포인터 공간으로 앞 노드와 뒤 노드를 모두 가리키는 리스트
 
-    Doubly linked list
+    [Doubly linked list](/Algorithm/List/Doubly_linked_list)

@@ -11,6 +11,7 @@
     * [Array_List](/Algorithm/List/Array_List)
     * [Linked_List](/Algorithm/List/Linked_List)
     * [Circular_Linked_List](/Algorithm/List/Circular_Linked_List)
+    * [Doubly linked list](/Algorithm/List/Doubly_linked_list)
 2. [스택](/Algorithm/Stack)
     * [Array_Stack](/Algorithm/Stack/Array_Stack)
     * [Linked_List_Stack](/Algorithm/Stack/Linked_List_Stack)
