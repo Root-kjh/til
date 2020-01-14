@@ -4,7 +4,7 @@
 
 ## 정렬의 종류
 
-1. 선택 정렬(Selection Sort)
+1. [선택 정렬(Selection Sort)](/Algorithm/Sort/Selection_Sort)
 
 2. 삽입 정렬(Insertion Sort)
 
@@ -22,4 +22,4 @@
 
 9. 기수 정렬(Radix Sort)
 
-10. 카운팅 정렬(Counting Sort)
+10. [카운팅 정렬(Counting Sort)](/Algorithm/Sort/Counting_Sort)
