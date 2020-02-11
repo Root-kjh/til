@@ -33,4 +33,4 @@
     
     6. [프로젝트 계획](/Spring/Recruit-List/6.%20프로젝트_계획.md)
 
-    7. [Spring-Security](/Spring/Recruit-List/6.%20Spring_Security.md)
+    7. [Spring-Security](/Spring/Recruit-List/7.%20Spring_Security.md)
