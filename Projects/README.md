@@ -4,7 +4,7 @@
 
 ## 목차
 
-* [Recruit-List(Project)](/Projects/Recruit-List)
+* [Recruit-List](/Projects/Recruit-List)
 
     1. [MongoDB 사용](/Projects/Recruit-List/1.%20MongoDB_사용.md)
     
