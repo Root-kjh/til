@@ -13,6 +13,7 @@
 import sys
 import os
 import timeit
+
 def rabin_karp(context, keyword):
     keyword_len=len(keyword)
     context_len=len(context)
@@ -31,10 +32,8 @@ def rabin_karp(context, keyword):
                 count+=1
         else:
             context_hash=2*(context_hash-ord(context[idx-1])*power)+ord(context[keyword_len-1+idx])
-            # print(f'idx : {idx} hash : {context_hash}')
             if context_hash==keyword_hash:
                 count+=1
-                # print(context[idx:idx+keyword_len])
     return count
 
 def default(context,keyword):
