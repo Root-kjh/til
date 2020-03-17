@@ -25,8 +25,7 @@
 1. [트리](/Algorithm/Tree)
     * [Binary_Tree](/Algorithm/Binary_Tree)
 
-2. [그래프](//Algorithm/Graph)
-    * [Weighted Graph](/Algorithm/Graph/Weighted_Graph)
+2. [그래프](/Algorithm/Graph)
 
 ### 알고리즘
 
@@ -38,3 +37,9 @@
 6. [Primality Test](/Algorithm/Primality_Test)
 7. [Sort](/Algorithm/Sort)
     * [Quick Sort](/Algorithm/Sort/Quick_Sort)
+    * [Bubble Sort](/Algorithm/Sort/Bubble_Sort)
+    * [Counting Sort](/Algorithm/Sort/Counting_Sort)
+    * [Selection Sort](/Algorithm/Sort/Selection_Sort)
+8. [LIS](/Algorithm/LIS)
+9. [N-Queen](/Algorithm/N-Queen)
+10. [String_Matching](/Algorithm/String_Matching)
