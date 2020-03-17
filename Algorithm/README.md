@@ -42,3 +42,5 @@
 8. [LIS](/Algorithm/LIS.md)
 9. [N-Queen](/Algorithm/N-Queen.md)
 10. [String_Matching](/Algorithm/String_Matching)
+    * [Default](/Algorithm/String_Matching/default.md)
+    * [Rabin Karp](/Algorithm/String_Matching/Rabin_Karp.md)
