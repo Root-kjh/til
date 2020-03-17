@@ -4,15 +4,15 @@
 
 ## 정렬의 종류
 
-1. [선택 정렬(Selection Sort)](/Algorithm/Sort/Selection_Sort)
+1. [선택 정렬(Selection Sort)](/Algorithm/Sort/Selection_Sort.md)
 
 2. 삽입 정렬(Insertion Sort)
 
-3. 버블 정렬(Bubble Sort)
+3. [버블 정렬(Bubble Sort)](/Algorithm/Sort/Bubble_Sort.md)
 
 4. 병합 정렬(Merge Sort)
 
-5. [퀵 정렬(Quick Sort)](/Algorithm/Sort/Quick_Sort)
+5. [퀵 정렬(Quick Sort)](/Algorithm/Sort/Quick_Sort.md)
 
 6. 힙 정렬(Heap Sort)
 
@@ -22,4 +22,4 @@
 
 9. 기수 정렬(Radix Sort)
 
-10. [카운팅 정렬(Counting Sort)](/Algorithm/Sort/Counting_Sort)
+10. [카운팅 정렬(Counting Sort)](/Algorithm/Sort/Counting_Sort.md)

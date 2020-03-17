@@ -5,8 +5,8 @@
 
 1. 전역 배열상태로 존재하는 정적 Stack
     
-    [Array Stack](/Algorithm/Stack/Array_Stack)
+    [Array Stack](/Algorithm/Stack/Array_Stack.md)
 
 2. malloc()을 사용한 동적 할당 Stack
 
-    [Linked List Stack](/Algorithm/Linked_List_Stack)
+    [Linked List Stack](/Algorithm/Linked_List_Stack.md)

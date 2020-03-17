@@ -44,7 +44,7 @@
 
 3. 이진 탐색 트리
 
-    [Binary Tree](/Algorithm/Tree/Binary_Tree)
+    [Binary Tree](/Algorithm/Tree/Binary_Tree.md)
 
     AA Tree
 
