@@ -44,3 +44,4 @@
 10. [String_Matching](/Algorithm/String_Matching)
     * [Default](/Algorithm/String_Matching/default.md)
     * [Rabin Karp](/Algorithm/String_Matching/Rabin_Karp.md)
+    * [KMP](/Algorithm/String_Matching/KMP.md)

@@ -5,3 +5,5 @@
 1. [Default](/Algorithm/String_Matching/default.md)
 
 2. [Rabin Karp](/Algorithm/String_Matching/Rabin_Karp.md)
+
+3. [KMP](/Algorithm/String_Matching/KMP.md)
