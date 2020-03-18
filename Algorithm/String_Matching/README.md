@@ -15,26 +15,30 @@ import os
 import timeit
 
 def rabin_karp(context, keyword):
+    modules=101
+    alphabet_size=256
     keyword_len=len(keyword)
-    keyword_idx_max=keyword_len-1
     context_len=len(context)
     keyword_hash=0
     context_hash=0
     power=1
     count=0
-    for idx in range(context_len-keyword_len+1):
-        if idx==0:
-            for sub_idx in range(keyword_len):
-                context_hash+=ord(context[keyword_idx_max-sub_idx])*power
-                keyword_hash+=ord(keyword[keyword_idx_max-sub_idx])*power
-                if sub_idx<keyword_idx_max:
-                    power*=2
-            if context_hash==keyword_hash:
-                count+=1
-        else:
-            context_hash=2*(context_hash-ord(context[idx-1])*power)+ord(context[keyword_idx_max+idx])
-            if context_hash==keyword_hash:
-                count+=1
+    for idx in range(keyword_len):
+        context_hash=(ord(context[idx])+context_hash*alphabet_size)%modules
+        keyword_hash=(ord(keyword[idx])+keyword_hash*alphabet_size)%modules
+        if idx==keyword_len-1:
+            continue
+        power=(power*alphabet_size)%modules
+
+    for idx in range(0,context_len-keyword_len+1):
+        if context_hash==keyword_hash and context[idx:idx+keyword_len]==keyword:
+            count+=1
+        if idx==context_len-keyword_len:
+            continue
+        context_hash=(
+            (context_hash-ord(context[idx])*power)*alphabet_size
+            +ord(context[idx+keyword_len])
+        )%modules
     return count
 
 def default(context,keyword):
@@ -60,25 +64,33 @@ def kmp(context,keyword):
     keyword_max_idx=keyword_len-1
     context_len=len(context)
     kmp_table=[0]*keyword_len
-    sub_idx=0
+    sub_idx=1
+    idx=0
     count=0
-    for idx in range(1,keyword_len):
-        while sub_idx>0 and keyword[idx]!=keyword[sub_idx]:
-            sub_idx=kmp_table[sub_idx-1]
-        if keyword[idx]==keyword[sub_idx]:
-            sub_idx+=1
-            kmp_table[idx]=sub_idx
     
+    while sub_idx<keyword_len:
+        if keyword[idx]==keyword[sub_idx]:
+            idx+=1
+        elif idx>0:
+            i=kmp_table[idx-1]
+            continue
+        kmp_table[sub_idx]=idx
+        sub_idx+=1
+    
+    idx=0
     sub_idx=0
-    for idx in range(context_len):
-        while sub_idx>0 and context[idx]!=keyword[sub_idx]:
-            sub_idx=kmp_table[sub_idx-1]
-        if context[idx]==keyword[sub_idx]:
+
+    while idx<context_len:
+        if keyword[sub_idx]==context[idx]:
             if sub_idx==keyword_max_idx:
                 count+=1
-                sub_idx=kmp_table[sub_idx]
-            else:
-                sub_idx+=1
+                sub_idx=0
+            sub_idx+=1
+
+        elif sub_idx>0:
+            sub_idx=kmp_table[sub_idx-1]
+            continue
+        idx+=1
     return count
 
 def readfile_read(file_dir):
@@ -103,10 +115,10 @@ if __name__ == '__main__':
 ```
 
 ```
-count : 0.0018466000000000038
-kmp : 0.4254551
-rabin karp : 0.7186627999999999
-default : 0.6225997000000001
+count : 0.0014093999999999982
+kmp : 0.4736629
+rabin karp : 1.2707847
+default : 0.5837794999999999
 ```
 
 모든 알고리즘의 실행 결과는

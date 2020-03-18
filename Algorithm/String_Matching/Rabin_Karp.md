@@ -8,27 +8,30 @@
 
 ```python
 def rabin_karp(context, keyword):
+    modules=101
+    alphabet_size=256
     keyword_len=len(keyword)
     context_len=len(context)
     keyword_hash=0
     context_hash=0
     power=1
     count=0
-    for idx in range(context_len-keyword_len+1):
-        if idx==0:
-            for sub_idx in range(keyword_len):
-                context_hash+=ord(context[keyword_len-1-sub_idx])*power
-                keyword_hash+=ord(keyword[keyword_len-1-sub_idx])*power
-                if sub_idx<keyword_len-1:
-                    power*=2
-            if context_hash==keyword_hash:
-                count+=1
-        else:
-            context_hash=2*(context_hash-ord(context[idx-1])*power)+ord(context[keyword_len-1+idx])
-            # print(f'idx : {idx} hash : {context_hash}')
-            if context_hash==keyword_hash:
-                count+=1
-                # print(context[idx:idx+keyword_len])
+    for idx in range(keyword_len):
+        context_hash=(ord(context[idx])+context_hash*alphabet_size)%modules
+        keyword_hash=(ord(keyword[idx])+keyword_hash*alphabet_size)%modules
+        if idx==keyword_len-1:
+            continue
+        power=(power*alphabet_size)%modules
+
+    for idx in range(0,context_len-keyword_len+1):
+        if context_hash==keyword_hash and context[idx:idx+keyword_len]==keyword:
+            count+=1
+        if idx==context_len-keyword_len:
+            continue
+        context_hash=(
+            (context_hash-ord(context[idx])*power)*alphabet_size
+            +ord(context[idx+keyword_len])
+        )%modules
     return count
 ```
 
