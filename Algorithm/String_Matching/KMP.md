@@ -5,6 +5,7 @@
 ```python
 def kmp(context,keyword):
     keyword_len=len(keyword)
+    keyword_max_idx=keyword_len-1
     context_len=len(context)
     kmp_table=[0]*keyword_len
     sub_idx=0
@@ -21,8 +22,9 @@ def kmp(context,keyword):
         while sub_idx>0 and context[idx]!=keyword[sub_idx]:
             sub_idx=kmp_table[sub_idx-1]
         if context[idx]==keyword[sub_idx]:
-            if sub_idx==keyword_len-1:
+            if sub_idx==keyword_max_idx:
                 count+=1
+                sub_idx=kmp_table[sub_idx]
             else:
                 sub_idx+=1
     return count
