@@ -16,6 +16,7 @@ import timeit
 
 def rabin_karp(context, keyword):
     keyword_len=len(keyword)
+    keyword_idx_max=keyword_len-1
     context_len=len(context)
     keyword_hash=0
     context_hash=0
@@ -24,14 +25,14 @@ def rabin_karp(context, keyword):
     for idx in range(context_len-keyword_len+1):
         if idx==0:
             for sub_idx in range(keyword_len):
-                context_hash+=ord(context[keyword_len-1-sub_idx])*power
-                keyword_hash+=ord(keyword[keyword_len-1-sub_idx])*power
-                if sub_idx<keyword_len-1:
+                context_hash+=ord(context[keyword_idx_max-sub_idx])*power
+                keyword_hash+=ord(keyword[keyword_idx_max-sub_idx])*power
+                if sub_idx<keyword_idx_max:
                     power*=2
             if context_hash==keyword_hash:
                 count+=1
         else:
-            context_hash=2*(context_hash-ord(context[idx-1])*power)+ord(context[keyword_len-1+idx])
+            context_hash=2*(context_hash-ord(context[idx-1])*power)+ord(context[keyword_idx_max+idx])
             if context_hash==keyword_hash:
                 count+=1
     return count
@@ -94,17 +95,17 @@ if __name__ == '__main__':
     in_file=sys.argv[2]
     context=readfile_read(in_file)
     number=10
-    print(timeit.timeit('context.count(from_word)',globals=globals(),number=number))
-    print(timeit.timeit('kmp(context,from_word)',globals=globals(),number=number))
-    print(timeit.timeit('rabin_karp(context,from_word)',globals=globals(),number=number))
-    print(timeit.timeit('default(context,from_word)',globals=globals(),number=number))
+    print("count : "+str(timeit.timeit('context.count(from_word)',globals=globals(),number=number)))
+    print("kmp : "+str(timeit.timeit('kmp(context,from_word)',globals=globals(),number=number)))
+    print("rabin karp : "+str(timeit.timeit('rabin_karp(context,from_word)',globals=globals(),number=number)))
+    print("default : "+str(timeit.timeit('default(context,from_word)',globals=globals(),number=number)))
 ```
 
 ```
-0.0001338999999999993
-0.07744709999999999
-0.2720326
-0.06061369999999999
+count : 0.0018466000000000038
+kmp : 0.4254551
+rabin karp : 0.7186627999999999
+default : 0.6225997000000001
 ```
 
 모든 알고리즘의 실행 결과는
