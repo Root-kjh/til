@@ -41,15 +41,17 @@ def default(context,keyword):
     keyword_len=len(keyword)
     pos=0
     count=0
-    for ch in context:
-        if ch==keyword[key_count]:
-            key_count+=1
-            if key_count==keyword_len:
-                count+=1
+    for idx in range(len(context)-keyword_len+1):
+        while True:
+            if context[idx+key_count]==keyword[key_count]:
+                key_count+=1
+                if key_count==keyword_len:
+                    count+=1
+                    key_count=0
+                    break
+            else:
                 key_count=0
-        else:
-            key_count=0
-        pos+=1
+                break
     return count
 
 def kmp(context,keyword):
@@ -108,9 +110,7 @@ if __name__ == '__main__':
 모든 알고리즘의 실행 결과는
 
 1. count함수
-2. Default 알고리즘
 3. KMP 알고리즘
+2. Default 알고리즘
 4. Rabin-Karp 알고리즘
 의 순서로 나왔다.
-
-실행시간에 대해서 조금 더 분석이 필요할 것 같다.
