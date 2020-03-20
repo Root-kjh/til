@@ -20,7 +20,7 @@ def kmp(context,keyword):
         if keyword[idx]==keyword[sub_idx]:
             idx+=1
         elif idx>0:
-            i=kmp_table[idx-1]
+            idx=kmp_table[idx-1]
             continue
         kmp_table[sub_idx]=idx
         sub_idx+=1
