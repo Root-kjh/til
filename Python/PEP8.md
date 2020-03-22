@@ -289,3 +289,57 @@ do_one(); do_two(); th_three(long, argument,
                              list, like, this)
 if foo == 'blah': one(); two(); three()
 ```
+
+# Comments(주석)
+
+주석은 코드가 업데이트 될 때마다 같이 업데이트 해야 한다.
+
+주석은 반드시 완전한 문장형태여야 한다.
+
+주석이 구문이거나 한 문장일 경우, 첫 글자는 대문자를 쓴다. 그러나 첫 단어가 소문자 식별자인 경우 그대로 소문자를 쓴다.
+
+주석이 짧을 경우 마침표가 생략될 수 있다.
+
+마침표 뒤에는 두 칸의 공백을 준다.
+
+주석은 영어로 쓴다.
+
+## Block Comments
+
+    뒤에 따라오는 코드에 대한 설명을 할 때 사용한다.
+
+블록 주석은 뒤에 따라오는 코드와 들여쓰기 수준을 맞춘다.
+
+모든 줄은 # 뒤에 한 칸 공백을 주고 작성한다.
+
+블록 주석의 문단은 # 기호 한줄로 구분한다.
+
+## Inline Comments
+
+    인라인 주석은 한 구문과 같은 줄에 쓰는 주석을 말한다.
+
+인라인 주석은 구문과 적어도 2칸 이상의 공백으로 구분되야 하며, # 기호와 한 칸 공백을 주고 작성을 시작한다.
+
+인라인 주석은 잘 사용되지 않는다.
+
+명백한 상황에서의 주석은 불필요하며, 떄때로 아래와 같은 상황에서는 도움이 된다.
+
+```python
+x = x + 1        # Compensate for border
+```
+
+## Documentation String
+
+public 모듈, 함수, 클래스, 메소드에 대해서 Docsstring을 작성하는게 좋다.
+
+non-public 메소드는 Dqocstring이 필요없다. 다만 메소드가 무슨 역할을 하는지 주석을 작성하는 것이 좋다.
+
+def 문장 바로 아래줄에 위치하는 것이 좋다.
+
+Docstring 마지막 줄은 \"\"\" 기호 한줄로 끝낸다.
+
+```python
+"""Return a foobang
+Optional plotz says to frobnicate the bizbaz first.
+"""
+```
