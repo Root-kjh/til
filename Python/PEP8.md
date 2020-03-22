@@ -343,3 +343,25 @@ Docstring 마지막 줄은 \"\"\" 기호 한줄로 끝낸다.
 Optional plotz says to frobnicate the bizbaz first.
 """
 ```
+
+# Naming Conventions
+
+    파이썬 코드의 명명규칙은 매우 복잡하기에 완전히 일정하게 정하지 않는다.
+
+    기존 작성된 코드는 그 코드의 명명법을 따르도록 하고, 앞으로 작성될 코드에 아래 규칙을 따르도록 한다.
+
+## Overriding Principle
+
+    사용자에게 public API로 보여지는 이름은 그 구현보다 사용법을 나타내도록 명명하는 것이 좋다.
+
+## Names to Avoid
+
+한 글자 변수명으로 l, O, I를 사용하지 않는ㄴ다.
+
+I를 써야한다면 L을 쓰도록 한다.
+
+## Class Names
+
+    CapWords 방식을 따른다.
+
+    
