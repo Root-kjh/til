@@ -360,8 +360,100 @@ Optional plotz says to frobnicate the bizbaz first.
 
 I를 써야한다면 L을 쓰도록 한다.
 
+## Package and Module Names
+
+모듈이름은 짧아야 하고 모두 소문자를 사용하며, 가독성을 위해 언더스코어가 쓰일 수 있다.
+
+패키지 이름도 짧아야 하고 모두 소문자를 사용하며, 언더스코어를 사용하지 않는다.
+
 ## Class Names
 
     CapWords 방식을 따른다.
 
-    
+인터페이스가 정의 되어 있거나, callable로서 우선적으로 사용되는 경우, 함수명명법이 대신 사용된다.
+
+## Type variable names
+
+    짧은 CapWords 방식을 사용한다.(T, AnyStr, Num)
+
+covariant or contravariant임을 나타내기 위해 변수의 접미사로 _co or _contra가 사용된다.
+
+```python
+from typing import TypeVar
+
+VT_co = TypeVar('VT_co', covariant=True)
+KT_contra = TypeVar('KT_contra', contravariant=True)
+```
+
+## Exception Names
+
+    예외도 클래스이기 때문에 클래스 명명규칙을 따른다. 그리고 접미사 'Error'를 붙인다.(실제 그 예외가 에러일 경우)
+
+## Global Variable Names
+
+    이 규칙은 함수에 적용되는 것과 동일하다.
+
+'from M import *'을 사용하도록 설계된 모듈에서는 '\_\_all\_\_'을 사용해 다른 모듈에서 사용되는 것을 막거나, 예전 규칙인 언더스코어를 이름 앞에 붙여 사용해 'non-public'임을 나타내야한다.
+
+## Function Names
+
+    언더스코어로 단어를 구분한다.
+
+## Function and method arguments
+
+인스턴스 메소드의 첫 인수로 반드시 self를 쓴다.
+
+클래스 메소드의 첫 인수로는 반드시 cls를 쓴다.
+
+인수명이 키워드와 충돌될 경우, 인수명 뒤에 언더스코어를 붙여 사용한다. (ex : class_)
+
+가장 좋은 방법은 충돌이 없게끔 동의어로 이름을 짓는 것이다.
+
+## Method Names and Instance Variable
+
+    함수명명규칙을 따른다.
+
+non-public 메소드, 인스턴스 변수에는 언더스코어 하나를 붙인다.
+
+서브클래스와의 충돌을 피하기 위해 언더스코어 2개를 붙여 파이썬 이름 managling 규칙을 따르도록 한다.
+
+파이썬은 다음과 같은 managling 규칙을 따른다.
+
+    만약 'Foo' 클래스 안에 '__a'인 어트리뷰트가 있다면 'Foo.__a'의 형태로 접근이 불가능하다.
+    일반적으로 이름 앞 언더스코어 2개를 붙이는 방식은 주로 서브클래스로 사용되도록 디자인 된 클래스의 어트리뷰트와의 이름충돌을 막기 위해 사용한다.
+
+## Constants
+
+삼수는 주로 모듈레벨에서 정의되며 언더스코어를 이용한 대분자 표기법을 사용한다.
+
+예로 MAX_OVERFLOW, TOTAL과 같은 방식으로 표기한다.
+
+## Designing for inheritance
+
+항상 클래스의 메소드와 어트리뷰트를 public으로 할지 non-public으로 할지 정해라.
+
+만약 불확실하다면 non-public으로 정해라.
+
+* public 어트리뷰트 : 관련 없는 클라이언트가 직접 사용 가능
+
+* non-public 어트리뷰트 : 서드파티에 의해 사용되지 않도록 의도된 것이나 수정, 삭제가 가능하다.
+
+
+    파이썬은 private라는 말을 사용하지 않는다. 파이썬에 진짜 private한 어트리뷰트는 없다.
+
+다른 종류의 어트리뷰트로는 서브클래스 API가 있다.(protected)
+
+단순한 데이터 어트리뷰트는 직접 접근을 허용한다.
+
+properties는 새로운 스타일의 클래스에서만 작동한다.
+
+Caching과 같은 부작용은 일반적으로 괜찮지만, 부작용이 없는 기능적인 일을 유지하도록 시도하는것이 좋다.
+
+계산적으로 상당한 작동을 요구하는 properties를 사용하는 것을 피하도록 한다.
+
+만약 클래스가 서브클래스화 되는 것이 고려될 때, 서브클래스에서 사용하길 원하지 않는 속성을 가지고 있다면, 이름 앞에 두 개의 언더스코어를 활용하는 네이밍과 이름 끝에는 언더스코어를 작성하지 않는것을 고려하도록 한다.
+
+## Public과 내부 인터페이스
+
+이전버전과의 호환성 보장은 오직 public 인터페이스에게만 적용한다.
+
