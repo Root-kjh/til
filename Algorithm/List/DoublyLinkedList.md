@@ -1,3 +1,4 @@
+```python
 class list:
     class Node:
         def __init__(self,data,next=None,prev=None):
@@ -47,3 +48,4 @@ class list:
                 else:
                     print(p.data)
                 p=p.next
+```

@@ -29,35 +29,3 @@
 * 부모-자식 관계이므로 흐름은 top-bottom/bottom-top으로 이루어진다.
 
 * 순회는 Pre-order/In-order/Post-order로 이루어진다. 이 3가지 모두 DFS/BFS 안에 있다.
-
-## 트리의 종류
-
-1. 해시 트리
-
-    Hash Tree
-
-2. B 트리
-
-    B Tree
-
-    B+Tree
-
-3. 이진 탐색 트리
-
-    [Binary Tree](/Algorithm/Tree/Binary_Tree.md)
-
-    AA Tree
-
-    AVL Tree
-
-    RB-Tree
-
-    Balanced Tree
-
-    Splay Tree
-
-4. R트리
-
-    R Tree
-
-    R+Tree
