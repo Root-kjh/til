@@ -481,3 +481,35 @@ BaseException보다 Exception으로부터 예외를 얻도록 한다.
 
 예외를 선정할 때, 가능하다면 except: 보다 특정 예외를 언급하도록 한다.
 
+bare except: 절은 컨트롤C를 사용하여 프로그램을 중단시키는 것을 어렵게 만드는 SystemExit와 KeyboardInterrupt 예외를 잡을 수 있고, 다른 문제를 숨길 수 있다.
+
+    만약 사용자가 모든 예외를 잡길 원한다면 except Exception: 을 사용한다.
+
+모든 try/except 구문에 대해, try 구문의 절대적인 수를 최소한으로 제한하도록 한다.
+
+리소스가 코드의 특정 세션에 위치할 때, 이것이 사용이후 신뢰성 있게 정리되는 것을 보장하도록 with 혹은 try/finally 구문을 적용해야한다.
+
+return 구문에서 일관성을 유지하도록 한다.
+
+    * 함수에 있는 모든 return 구문은 반드시 표현식을 반환하거나, 없어야한다.
+
+    * 만약 어떤 return 구문이 표현식을 반환했다면, return 구문이 반환되는 값이 없는 곳에서는 return None을 명시하고 함수의 끝에(도달할 수 있다면) explitict return 구문이 존재해야 한다.
+
+문자열 모듈 대신 메서드를 사용하도록 한다.
+
+* 좋은 예
+```python
+if foo.startswith("bar"):
+```
+
+* 나쁜 예
+```python
+if foo[:3]=="bar":
+```
+
+시퀀스(문자열, 리스트, 튜플)에 대해 비어있는 시퀀스는 false 라는 것을 이용한다.
+
+```python
+if not seq:
+if seq:
+```
