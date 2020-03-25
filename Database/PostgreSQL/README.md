@@ -1,4 +1,4 @@
-# Database Study
+# Database
 ### Postgre SQL
 ---
 * PostgreSQL의 사용법과 특징 등 학습
