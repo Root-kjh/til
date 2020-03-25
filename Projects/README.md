@@ -4,18 +4,20 @@
 
 ## 목차
 
-* [Recruit-List](/Projects/Recruit-List)
+### Recruit List
 
-    1. [MongoDB 사용](/Projects/Recruit-List/1.%20MongoDB_사용.md)
-    
-    2. [AWS 사용](/Projects/Recruit-List/2.%AWS_사용.md)
-    
-    3. [JPA&Hibernate 사용](/Projects/Recruit-List/3.%20JPA&Hibernate_사용.md)
-    
-    4. [MySQL 사용](/Projects/Recruit-List/4.%20MySQL_사용.md)
-    
-    5. [Rest API](/Projects/Recruit-List/5.%20Rest_API.md)
-    
-    6. [프로젝트 계획](/Projects/Recruit-List/6.%20프로젝트_계획.md)
+1. [MongoDB 사용](./Recruit-List/UseMongoDB.md)
 
-    7. [Spring-Security](/Projects/Recruit-List/7.%20Spring_Security.md)
+2. [AWS 사용](./Recruit-List/UseAWS.md)
+
+3. [JPA&Hibernate 사용](./Recruit-List/UseJAPHibernate.md)
+
+4. [MySQL 사용](./Recruit-List/UseMySQL.md)
+
+5. [Rest API](./Recruit-List/RestAPI.md)
+
+6. [프로젝트 계획](./Recruit-List/Project/Plan.md)
+
+7. [Spring-Security](./Recruit-List/SpringSecurity.md)
+
+### Food Selector
