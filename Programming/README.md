@@ -50,6 +50,8 @@
 
 ### Clean Code
 
+1. [Naming](./CleanCode/Naming.md)
+
 ### Javascript
 
 1. [Scope](./Javascript/Scope.md)
