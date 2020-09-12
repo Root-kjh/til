@@ -47,6 +47,9 @@
 
 2. [그래프](./DataStruct/Graph)
 
+### Clean Architecture
+
+1. [Programming Paradigm](./CleanArchitecture/ProgrammingParadigm.md)
 
 ### Clean Code
 
@@ -58,6 +61,8 @@
 
 ### Python
 
-1. [PEP8](/Programming/Python/PEP8.md)
+1. [PEP8](./Python/PEP8.md)
 
 ### OOP
+
+1. [OOP Basic](./OOP/OOPBasic.md)
