@@ -56,6 +56,7 @@
 1. [Naming](./CleanCode/Naming.md)
 2. [Function](./CleanCode/Function.md)
 3. [Comment](./CleanCode/Comment.md)
+4. [Code Format](./CleanCode/CodeFormat.md)
 
 ### Javascript
 
