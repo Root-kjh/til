@@ -62,9 +62,26 @@
 
 1. [Scope](./Javascript/Scope.md)
 
+### React
+
+1. [InstallReact](./React/InstallReact.md)
+
+2. [JSX](./React/JSX.md)
+
+3. [Component](./React/Component.md)
+
+4. [Probs](./React/Probs.md)
+
+5. [State](./React/State.md)
+
+6. [Event](./React/Event.md)
+
 ### Python
 
 1. [PEP8](./Python/PEP8.md)
+
+### R
+
 
 ### OOP
 
