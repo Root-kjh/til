@@ -5,8 +5,8 @@
 
 ## 목차
 
-### [JWT](./JWT.md)
+1. [JWT](./JWT.md)
 
-### [RestAPI](./RestAPI.md)
+2. [RestAPI](./RestAPI.md)
 
-### [AWS](./AWS.md)
+3. [AWS](./AWS.md)
