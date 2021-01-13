@@ -21,6 +21,7 @@
     * [Default](./Algorithm/String_Matching/Default.md)
     * [Rabin Karp](./Algorithm/String_Matching/RabinKarp.md)
     * [KMP](./Algorithm/String_Matching/KMP.md)
+11. [Hanoi](./Algorithm/Hanoi.md)
 
 
 ### DataStruct
