@@ -191,3 +191,60 @@ print("\n".join([" ".join(str(j[0]) for j in i) for i in sdocu_array]))
 
 실제로 무작위 숫자 하나를 넣고 검사하는것을 하나의 연산이라고 해도 초당 14경 8600조의 연산을 하는 슈퍼컴퓨터로 42498152141377242110626082522156542060704657066823747년이 걸리는 연산이다.
 
+위의 빈칸에 들어갈 숫자의 범위를 구하는 방법과 합쳐, 해당 칸에 들어갈 숫자를 대입해보며 백트래킹 전략으로 탐색하면 시간을 대폭 줄일 수 있다.
+
+```python
+from collections import deque
+
+sdocu_size = 9
+sdocu_array = [[0 for j in range(9)] for i in range(9)]
+location_list = deque()
+
+for i in range(sdocu_size):
+    j = 0
+    for num in list(map(int, input().split())):
+        sdocu_array[i][j] = num
+        if num == 0:
+            location_list.append([i, j])
+        j+=1
+
+def search_num(i, j):
+    flag_table = [True]*10
+    temp_i = i%3
+    temp_j = j%3
+    domain_i = i-(temp_i)
+    domain_j = j-(temp_j)
+    for k in range(sdocu_size):
+        flag_table[sdocu_array[k][j]] = False
+        flag_table[sdocu_array[i][k]] = False
+        flag_table[sdocu_array[domain_i+(k//3)][domain_j+(k%3)]] = False
+    num_list = list()
+    for k in range(1, 10):
+        if flag_table[k]:
+            num_list.append(k)
+    return num_list
+
+def search_next_location():
+    if location_list:
+        location = location_list.popleft()
+        num_list = search_num(location[0],location[1])
+        if num_list:
+            for num in num_list:
+                sdocu_array[location[0]][location[1]] = num
+                if search_next_location():
+                    return True
+        sdocu_array[location[0]][location[1]] = 0
+        location_list.appendleft(location)
+        return False
+    else:
+        return True
+
+location = location_list.popleft()
+num_list = search_num(location[0], location[1])
+for num in num_list:
+    sdocu_array[location[0]][location[1]] = num
+    if search_next_location():
+        break
+
+print("\n".join([" ".join(str(j) for j in i) for i in sdocu_array]))
+```
