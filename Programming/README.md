@@ -22,8 +22,8 @@
     * [Rabin Karp](./Algorithm/String_Matching/RabinKarp.md)
     * [KMP](./Algorithm/String_Matching/KMP.md)
 11. [Hanoi](./Algorithm/Hanoi.md)
-12. [쉬운 계단 수](./쉬운_계단_수.md)
-13. [계단 오르기](./계단_오르기.md)
+12. [쉬운 계단 수](./Climbstairs.md)
+13. [계단 오르기](./Easystairs.md)
 ### DataStruct
 
 #### 선형구조
