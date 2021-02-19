@@ -26,6 +26,7 @@
 13. [계단 오르기](./Algorithm/Easystairs.md)
 14. [LCS](./Algorithm/LCS.md)
 15. [냅색(Knapsack)](./Algorithm/Knapsack.md)
+16. [나머지가 같은 수 구하기](./Algorithm/FindTheRemaind.md)
 ### DataStruct
 
 #### 선형구조
