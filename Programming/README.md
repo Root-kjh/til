@@ -23,7 +23,7 @@
     * [KMP](./Algorithm/String_Matching/KMP.md)
 11. [Hanoi](./Algorithm/Hanoi.md)
 12. [쉬운 계단 수](./Algorithm/Climbstairs.md)
-13. [계단 오르기](./Algorithm/Easystairs.md)
+13. [계단 오르기](./Algorithm/Easystaris.md)
 14. [LCS](./Algorithm/LCS.md)
 15. [냅색(Knapsack)](./Algorithm/Knapsack.md)
 16. [나머지가 같은 수 구하기](./Algorithm/FindTheRemaind.md)
