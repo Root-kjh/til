@@ -24,6 +24,7 @@
 11. [Hanoi](./Algorithm/Hanoi.md)
 12. [쉬운 계단 수](./Algorithm/Climbstairs.md)
 13. [계단 오르기](./Algorithm/Easystairs.md)
+14. [LCS](./Algorithm/LCS.md)
 ### DataStruct
 
 #### 선형구조
