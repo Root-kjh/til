@@ -27,6 +27,8 @@
 14. [LCS](./Algorithm/LCS.md)
 15. [냅색(Knapsack)](./Algorithm/Knapsack.md)
 16. [나머지가 같은 수 구하기](./Algorithm/FindTheRemaind.md)
+17. [완전탐색](./Algorithm/ExhaustiveSearch.md)
+
 ### DataStruct
 
 #### 선형구조
