@@ -28,6 +28,8 @@
 15. [냅색(Knapsack)](./Algorithm/Knapsack.md)
 16. [나머지가 같은 수 구하기](./Algorithm/FindTheRemaind.md)
 17. [완전탐색](./Algorithm/ExhaustiveSearch.md)
+18. [분할정복](./Algorithm/DivideConquer.md)
+
 
 ### DataStruct
 
@@ -86,17 +88,9 @@
 
 1. [PEP8](./Python/PEP8.md)
 
-### R
-
-### GO
-
-### gRPC
-
 ### OOP
 
 1. [OOP Basic](./OOP/OOPBasic.md)
-
-### Kotlin
 
 ### Ruby on Rails
 
@@ -107,3 +101,11 @@
     * [Controller](./RubyOnRails/Basic/Controller.md)
 
     * [Route](./RubyOnRails/Basic/Route.md)
+
+### Kotlin
+
+### R
+
+### GO
+
+### gRPC
