@@ -20,3 +20,5 @@
 3. [Protected Mode](./MakeOS/ProtectedMode.md)
 
 4. [인터럽트 제어](./MakeOS/InterruptServiceRoutine.md)
+
+* [메모리](./Memory.md)
