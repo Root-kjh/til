@@ -58,6 +58,7 @@
 #### Python으로 구현하는 DataStruct
 
 1. [Stack](./DataStruct/Python/stack.py)
+1. [Queue](./DataStruct/Python/queue.py)
 
 ### Clean Architecture
 
