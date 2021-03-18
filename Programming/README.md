@@ -55,6 +55,10 @@
 
 2. [그래프](./DataStruct/Graph)
 
+#### Python으로 구현하는 DataStruct
+
+1. [Stack](./DataStruct/Python/stack.py)
+
 ### Clean Architecture
 
 1. [Programming Paradigm](./CleanArchitecture/ProgrammingParadigm.md)
