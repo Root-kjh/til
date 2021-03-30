@@ -5,5 +5,5 @@
 
 ### ReferenceGuide
 
-1. [Make App](./ReferenceGuide/MakeApp.md)
-
+1. [Make App](./MakeApp.md)
+2. [설계개념](./DesignPhilosophies.md)
