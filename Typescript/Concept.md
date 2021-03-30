@@ -26,3 +26,40 @@ Javascript의 동일 연산자는 인수를 강제로 변환하여 예기치 않
 
 ### Typescript: A Static Type Checker
 
+정적타입 검사자인 Typescript는 프로그램을 실행시키기 전엥 값의 종류를 기반으로 프로그램의 오류를 찾는다.
+
+### Typescript: A Typed Superset of Javascript
+
+##### 구문(Syntax)
+
+Typescript는 js의 구문이 허용되는, js의 상위 집합 언어이다.
+
+Typescript는 독특한 구문 때문에 Javascript 코드를 오류로 보지 않는다.
+
+즉, 어떻게 작성되었는지 모르지만 작동하는 Javascript 코드를 Typescript 파일에 넣어도 잘 작동한다.
+
+##### 타입(Types)
+
+그러나 Typescript는 다른 종류의 값들을 사용할 수 있는 방법이 추가된, 타입이 있는 상위 집합이다.
+
+위의 obj.heigth 오류는 구문 오류가 아닌, 값의 타입을 잘못 사용해서 생긴 오류가 된다.
+
+또 다른 예시로, 아래와 같은 Javascript 코드가 브라우저에서 실행될 때, 다음과 같은 값이 출력된다.
+
+```ts
+console.log(4 / []); // @errors: 2363
+```
+
+구문적으로 옳은 위 코드는 Javascript에서 NaN을 출력하지만, Typescript에서 배열로 숫자를 나누는 연산이 옳지 않다고 판단해 오류를 발생시킨다.
+
+##### 런타임 특성
+
+Typescript는 Javascript의 런타임 특성을 가진 프로그래밍 언어로, Javascript 코드의 런타임 특성을 절대 변화시키지 않는다.
+
+##### 삭제된 타입
+
+Typescript의 컴파일러가 코드 검사를 마치면 타입을 삭제해 컴파일된 코드를 만든다.
+
+즉, 코드가 한번 컴파일되면 결과로 나온 일반 JS코드에는 타입 정보가 없다.
+
+결론적으로 컴파일 도중 타입 오류가 표출될 수 있지만, 타입 시스템 자체는 프로그램이 실행될 때 작동하는 방식과 관련이 없다. 
