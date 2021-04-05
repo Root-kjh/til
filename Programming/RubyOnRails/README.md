@@ -3,7 +3,7 @@
 
 ## 목차
 
-1. [Basic]
+1. Basic
     * [Model](./Basic/Model.md)
     * [Route](./Basic/Route.md)
     * [Controller](./Basic/Controller.md)

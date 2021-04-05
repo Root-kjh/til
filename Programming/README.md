@@ -51,7 +51,7 @@
 #### 비선형구조
 
 1. [트리](./DataStruct/Tree/Tree.md)
-    * [Binary Tree](./DataStruct/BinaryTree.md)
+    * [Binary Tree](./DataStruct/Tree/BinaryTree.md)
 
 2. [그래프](./DataStruct/Graph/Graph.md)
 
