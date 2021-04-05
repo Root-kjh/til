@@ -35,17 +35,17 @@
 
 #### 선형구조
 
-1. [리스트](./DataStruct/List)
-    * [Array List](./DataStruct/List/ArrayList.md)
-    * [Linked List](./DataStruct/List/LinkedList.md)
-    * [Circular Linked List](./DataStruct/List/CircularLinkedList.md)
-    * [Doubly linked list](./DataStruct/List/DoublyLinkedList.md)
-2. [스택](./DataStruct/Stack)
-    * [Array Stack](./DataStruct/Stack/ArrayStack.md)
-    * [Linked List Stack](./DataStruct/Stack/LinkedListStack.md)
-3. [큐](./DataStruct/Queue)
-    * [List Base Queue](./DataStruct/Queue/ListBaseQueue.md)
-    * [Circular Queue](./DataStruct/Queue/CircularQueue.md)
+1. 리스트
+    * [Array List](./DataStruct/ArrayList.md)
+    * [Linked List](./DataStruct/LinkedList.md)
+    * [Circular Linked List](./DataStruct/CircularLinkedList.md)
+    * [Doubly linked list](./DataStruct/DoublyLinkedList.md)
+2. 스택
+    * [Array Stack](./DataStruct/ArrayStack.md)
+    * [Linked List Stack](./DataStruct/LinkedListStack.md)
+3. 큐
+    * [List Base Queue](./DataStruct/ListBaseQueue.md)
+    * [Circular Queue](./DataStruct/CircularQueue.md)
 4. [덱](./DataStruct/Deque)
 
 #### 비선형구조
@@ -64,14 +64,16 @@
 
 ### Clean Architecture
 
-1. [Programming Paradigm](./CleanArchitecture/ProgrammingParadigm.md)
+1. [CleanArchitecture](./CleanArchitecture/CleanArchitecture.md)
+2. [Programming Paradigm](./CleanArchitecture/ProgrammingParadigm.md)
 
 ### Clean Code
 
-1. [Naming](./CleanCode/Naming.md)
-2. [Function](./CleanCode/Function.md)
-3. [Comment](./CleanCode/Comment.md)
-4. [Code Format](./CleanCode/CodeFormat.md)
+1. [CleanCode](./CleanCode/CleanCode.md)
+2. [Naming](./CleanCode/Naming.md)
+3. [Function](./CleanCode/Function.md)
+4. [Comment](./CleanCode/Comment.md)
+5. [Code Format](./CleanCode/CodeFormat.md)
 
 ### Javascript
 
@@ -108,11 +110,3 @@
     * [Controller](./RubyOnRails/Basic/Controller.md)
 
     * [Route](./RubyOnRails/Basic/Route.md)
-
-### Kotlin
-
-### R
-
-### GO
-
-### gRPC
