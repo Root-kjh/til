@@ -103,7 +103,7 @@
 
 ### Ruby on Rails
 
-1. [Basic](./RubyOnRails/Basic)
+1. Basic
     
     * [Model](./RubyOnRails/Basic/Model.md)
 
