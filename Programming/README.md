@@ -10,17 +10,17 @@
 3. [BackTracking](./Algorithm/BackTracking.md)
 4. [Fibonacci](./Algorithm/Fibonacci.md)
 6. [Primality Test](./Algorithm/PrimalityTest.md)
-7. [Sort](./Algorithm/Sort)
+7. Sort
     * [Quick Sort](./Algorithm/Sort/QuickSort.md)
     * [Bubble Sort](./Algorithm/Sort/BubbleSort.md)
     * [Counting Sort](./Algorithm/Sort/CountingSort.md)
     * [Selection Sort](./Algorithm/Sort/SelectionSort.md)
 8. [LIS](./Algorithm/LIS.md)
 9. [N-Queen](./Algorithm/N-Queen.md)
-10. [String_Matching](./Algorithm/StringMatching)
-    * [Default](./Algorithm/String_Matching/Default.md)
-    * [Rabin Karp](./Algorithm/String_Matching/RabinKarp.md)
-    * [KMP](./Algorithm/String_Matching/KMP.md)
+10. String_Matching
+    * [Default](./Algorithm/StringMatching/Default.md)
+    * [Rabin Karp](./Algorithm/StringMatching/RabinKarp.md)
+    * [KMP](./Algorithm/StringMatching/KMP.md)
 11. [Hanoi](./Algorithm/Hanoi.md)
 12. [쉬운 계단 수](./Algorithm/Easystaris.md)
 13. [계단 오르기](./Algorithm/Climbstairs.md)
@@ -35,25 +35,25 @@
 
 #### 선형구조
 
-1. 리스트
-    * [Array List](./DataStruct/ArrayList.md)
-    * [Linked List](./DataStruct/LinkedList.md)
-    * [Circular Linked List](./DataStruct/CircularLinkedList.md)
-    * [Doubly linked list](./DataStruct/DoublyLinkedList.md)
+1. [리스트](./DataStruct/List/List.md)
+    * [Array List](./DataStruct/List/ArrayList.md)
+    * [Linked List](./DataStruct/List/LinkedList.md)
+    * [Circular Linked List](./DataStruct/List/CircularLinkedList.md)
+    * [Doubly linked list](./DataStruct/List/DoublyLinkedList.md)
 2. 스택
-    * [Array Stack](./DataStruct/ArrayStack.md)
-    * [Linked List Stack](./DataStruct/LinkedListStack.md)
+    * [Array Stack](./DataStruct/Stack/ArrayStack.md)
+    * [Linked List Stack](./DataStruct/Stack/LinkedListStack.md)
 3. 큐
-    * [List Base Queue](./DataStruct/ListBaseQueue.md)
-    * [Circular Queue](./DataStruct/CircularQueue.md)
-4. [덱](./DataStruct/Deque)
+    * [List Base Queue](./DataStruct/Queue/ListBaseQueue.md)
+    * [Circular Queue](./DataStruct/Queue/CircularQueue.md)
+4. [덱](./DataStruct/Deque.md)
 
 #### 비선형구조
 
-1. [트리](./DataStruct/Tree)
+1. [트리](./DataStruct/Tree/Tree.md)
     * [Binary Tree](./DataStruct/BinaryTree.md)
 
-2. [그래프](./DataStruct/Graph)
+2. [그래프](./DataStruct/Graph/Graph.md)
 
 #### Python으로 구현하는 DataStruct
 

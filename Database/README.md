@@ -17,7 +17,7 @@
 
 6. [MySQL로 배우는 데이터베이스 관리](./DatabaseBasic/MySQL로_배우는_데이터베이스_관리.md)
 
-7. [MySQL의 소스 코드를 추적해 보자](./DatabaseBasic/MySQL의_소스를_추적해_보자.md)
+7. [MySQL의 소스 코드를 추적해 보자](./DatabaseBasic/MySQL의_소스_코드를_추적해_보자.md)
 
 
 * [SQL](./SQL.md)
