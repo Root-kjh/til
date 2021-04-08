@@ -17,10 +17,14 @@
 
 3. [기본적인 웹 게시물 관리](./코드로배우는스프링웹프로젝트/기본적인_웹_게시물_관리.md)
 
+### Spring Boot
+
+1. [logging](./SpringBoot/logging.md)
+
 ### Spring Docs
 
 1. [Overview](./SpringDocs/Overview.md)
 
 2. [Core](./SpringDocs/Core.md)
 
-### [JPA&Hibernate](/./JPAHibernate.md)
+* [JPA&Hibernate](./JPAHibernate.md)
